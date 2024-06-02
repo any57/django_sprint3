@@ -9,6 +9,7 @@ class BaseModel(models.Model):
     Абстрактная модель.
     Добавляет к модели дату создания и отметку о публикации.
     """
+
     is_published = models.BooleanField(
         default=True, verbose_name='Опубликовано',
         help_text='Снимите галочку, чтобы скрыть публикацию.')
